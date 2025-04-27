@@ -1,5 +1,62 @@
 import React, { useState, useEffect } from 'react';
 
+import Bed101_1 from '../../assets/images/interiorImg/bed101/IMG_2863.jpg';
+import Bed101_2 from '../../assets/images/interiorImg/bed101/IMG_2864.jpg';
+import Bed101_3 from '../../assets/images/interiorImg/bed101/IMG_2865.jpg';
+import Bed101_4 from '../../assets/images/interiorImg/bed101/IMG_2869.jpg';
+import Bed101_5 from '../../assets/images/interiorImg/bed101/IMG_2871.jpg';
+
+import Bed102_1 from '../../assets/images/interiorImg/bed102/IMG_0026.jpg';
+import Bed102_2 from '../../assets/images/interiorImg/bed102/IMG_0031.jpg';
+import Bed102_3 from '../../assets/images/interiorImg/bed102/IMG_0033.jpg';
+import Bed102_4 from '../../assets/images/interiorImg/bed102/IMG_2905.jpg';
+import Bed102_5 from '../../assets/images/interiorImg/bed102/IMG_2906.jpg';
+
+import living101_1 from '../../assets/images/interiorImg/living101/IMG_2897.jpg';
+import living101_2 from '../../assets/images/interiorImg/living101/IMG_2898.jpg';
+import living101_3 from '../../assets/images/interiorImg/living101/IMG_2899.jpg';
+import living101_4 from '../../assets/images/interiorImg/living101/IMG_2900.jpg';
+
+import living102_1 from '../../assets/images/interiorImg/living102/IMG_2877.jpg';
+import living102_2 from '../../assets/images/interiorImg/living102/IMG_2878.jpg';
+import living102_3 from '../../assets/images/interiorImg/living102/IMG_2879.jpg';
+import living102_4 from '../../assets/images/interiorImg/living102/IMG_2884.jpg';
+
+import Bed103_1 from '../../assets/images/interiorImg/bed103/IMG_0010.jpg';
+import Bed103_2 from '../../assets/images/interiorImg/bed103/IMG_2901.jpg';
+import Bed103_3 from '../../assets/images/interiorImg/bed103/IMG_2902.jpg';
+import Bed103_4 from '../../assets/images/interiorImg/bed103/IMG_2903.jpg';
+import Bed103_5 from '../../assets/images/interiorImg/bed103/IMG_8145.jpg';
+
+import Bed104_1 from '../../assets/images/interiorImg/bed104/IMG_2886.jpg';
+import Bed104_2 from '../../assets/images/interiorImg/bed104/IMG_2888.jpg';
+import Bed104_3 from '../../assets/images/interiorImg/bed104/IMG_2889.jpg';
+import Bed104_4 from '../../assets/images/interiorImg/bed104/IMG_2890.jpg';
+import Bed104_5 from '../../assets/images/interiorImg/bed104/IMG_2891.jpg';
+
+import living103_1 from '../../assets/images/interiorImg/living103/IMG_2907.jpg';
+import living103_2 from '../../assets/images/interiorImg/living103/IMG_2908.jpg';
+import living103_3 from '../../assets/images/interiorImg/living103/IMG_2913.jpg';
+import living103_4 from '../../assets/images/interiorImg/living103/IMG_2914.jpg';
+import living103_5 from '../../assets/images/interiorImg/living103/IMG_2915.jpg';
+
+import living104_1 from '../../assets/images/interiorImg/living104/IMG_0017.jpg';
+import living104_2 from '../../assets/images/interiorImg/living104/IMG_0018.jpg';
+import living104_3 from '../../assets/images/interiorImg/living104/IMG_0021.jpg';
+import living104_4 from '../../assets/images/interiorImg/living104/IMG_0022.jpg';
+
+import Bed105_1 from '../../assets/images/interiorImg/bed105/IMG_0001.jpg';
+import Bed105_2 from '../../assets/images/interiorImg/bed105/IMG_0002.jpg';
+import Bed105_3 from '../../assets/images/interiorImg/bed105/IMG_0003.jpg';
+import Bed105_4 from '../../assets/images/interiorImg/bed105/IMG_0004.jpg';
+import Bed105_5 from '../../assets/images/interiorImg/bed105/IMG_0005.jpg';
+
+import Bed106_1 from '../../assets/images/interiorImg/bed106/IMG_2917.jpg';
+import Bed106_2 from '../../assets/images/interiorImg/bed106/IMG_2919.jpg';
+import Bed106_3 from '../../assets/images/interiorImg/bed106/IMG_2920.jpg';
+import Bed106_4 from '../../assets/images/interiorImg/bed106/IMG_2925.jpg';
+import Bed106_5 from '../../assets/images/interiorImg/bed106/IMG_2927.jpg';
+
 import PBedroom1 from '../../assets/images/interiorImg/pinkRoom/IMG_4753.jpg';
 import PBedroom2 from '../../assets/images/interiorImg/pinkRoom/IMG_4754.jpg';
 import PBedroom3 from '../../assets/images/interiorImg/pinkRoom/IMG_4750.jpg';
@@ -67,6 +124,83 @@ import BRLobby3 from '../../assets/images/interiorImg/brownLobby/IMG_4843.png';
 import BRLobby4 from '../../assets/images/interiorImg/brownLobby/IMG_4849.jpg';
 
 // Sample image imports
+const bed101Images = [
+  { id: 1, src: Bed101_1, alt: 'Bedroom 1' },
+  { id: 2, src: Bed101_2, alt: 'Bedroom 2' },
+  { id: 3, src: Bed101_3, alt: 'Bedroom 3' },
+  { id: 4, src: Bed101_4, alt: 'Bedroom 4' },
+  { id: 5, src: Bed101_5, alt: 'Bedroom 5' },
+]
+
+const bed102Images = [
+  { id: 1, src: Bed102_1, alt: 'Bedroom 1' },
+  { id: 2, src: Bed102_2, alt: 'Bedroom 2' },
+  { id: 3, src: Bed102_3, alt: 'Bedroom 3' },
+  { id: 4, src: Bed102_4, alt: 'Bedroom 4' },
+  { id: 5, src: Bed102_5, alt: 'Bedroom 5' },
+]
+
+const living101Images = [
+  { id: 1, src: living101_1, alt: 'Livingroom 1' },
+  { id: 2, src: living101_2, alt: 'Livingroom 2' },
+  { id: 3, src: living101_3, alt: 'Livingroom 3' },
+  { id: 4, src: living101_4, alt: 'Livingroom 4' },
+]
+
+const living102Images = [
+  { id: 1, src: living102_1, alt: 'Livingroom 1' },
+  { id: 2, src: living102_2, alt: 'Livingroom 2' },
+  { id: 3, src: living102_3, alt: 'Livingroom 3' },
+  { id: 4, src: living102_4, alt: 'Livingroom 4' },
+]
+
+const bed103Images = [
+  { id: 1, src: Bed103_1, alt: 'Bedroom 1' },
+  { id: 2, src: Bed103_2, alt: 'Bedroom 2' },
+  { id: 3, src: Bed103_3, alt: 'Bedroom 3' },
+  { id: 4, src: Bed103_4, alt: 'Bedroom 4' },
+  { id: 5, src: Bed103_5, alt: 'Bedroom 5' },
+]
+
+const bed104Images = [
+  { id: 1, src: Bed104_1, alt: 'Bedroom 1' },
+  { id: 2, src: Bed104_2, alt: 'Bedroom 2' },
+  { id: 3, src: Bed104_3, alt: 'Bedroom 3' },
+  { id: 4, src: Bed104_4, alt: 'Bedroom 4' },
+  { id: 5, src: Bed104_5, alt: 'Bedroom 5' },
+]
+
+const living103Images = [
+  { id: 1, src: living103_1, alt: 'Livingroom 1' },
+  { id: 2, src: living103_2, alt: 'Livingroom 2' },
+  { id: 3, src: living103_3, alt: 'Livingroom 3' },
+  { id: 4, src: living103_4, alt: 'Livingroom 4' },
+  { id: 4, src: living103_5, alt: 'Livingroom 5' },
+]
+
+const living104Images = [
+  { id: 1, src: living104_1, alt: 'Livingroom 1' },
+  { id: 2, src: living104_2, alt: 'Livingroom 2' },
+  { id: 3, src: living104_3, alt: 'Livingroom 3' },
+  { id: 4, src: living104_4, alt: 'Livingroom 4' },
+]
+
+const bed105Images = [
+  { id: 1, src: Bed105_1, alt: 'Bedroom 1' },
+  { id: 2, src: Bed105_2, alt: 'Bedroom 2' },
+  { id: 3, src: Bed105_3, alt: 'Bedroom 3' },
+  { id: 4, src: Bed105_4, alt: 'Bedroom 4' },
+  { id: 5, src: Bed105_5, alt: 'Bedroom 5' },
+]
+
+const bed106Images = [
+  { id: 1, src: Bed106_1, alt: 'Bedroom 1' },
+  { id: 2, src: Bed106_2, alt: 'Bedroom 2' },
+  { id: 3, src: Bed106_3, alt: 'Bedroom 3' },
+  { id: 4, src: Bed106_4, alt: 'Bedroom 4' },
+  { id: 5, src: Bed106_5, alt: 'Bedroom 5' },
+]
+
 const pinkBedroomImages = [
   { id: 1, src: PBedroom1, alt: 'Bedroom 1' },
   { id: 2, src: PBedroom2, alt: 'Bedroom 2' },
@@ -160,6 +294,17 @@ const BrownLobbyImages = [
 ];
 
 const roomCategories = [
+  { name: 'bed01', images: bed101Images },
+  { name: 'bed02', images: bed102Images },
+  { name: 'living01', images: living101Images },
+  { name: 'living02', images: living102Images },
+  { name: 'bed03', images: bed103Images },
+  { name: 'bed04', images: bed104Images },
+  { name: 'living03', images: living103Images },
+  { name: 'living04', images: living104Images },
+  { name: 'bed05', images: bed105Images },
+  { name: 'bed06', images: bed106Images },
+
   { name: 'a1', images: pinkBedroomImages },
   { name: 'a2', images: bedroomImages },
   { name: 'a3', images: whiteBedroomImages },
