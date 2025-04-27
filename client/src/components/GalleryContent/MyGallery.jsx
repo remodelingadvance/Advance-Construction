@@ -45,11 +45,11 @@ import living104_2 from '../../assets/images/interiorImg/living104/IMG_0018.jpg'
 import living104_3 from '../../assets/images/interiorImg/living104/IMG_0021.jpg';
 import living104_4 from '../../assets/images/interiorImg/living104/IMG_0022.jpg';
 
-import Bed105_1 from '../../assets/images/interiorImg/bed105/IMG_0001.jpg';
-import Bed105_2 from '../../assets/images/interiorImg/bed105/IMG_0002.jpg';
-import Bed105_3 from '../../assets/images/interiorImg/bed105/IMG_0003.jpg';
-import Bed105_4 from '../../assets/images/interiorImg/bed105/IMG_0004.jpg';
-import Bed105_5 from '../../assets/images/interiorImg/bed105/IMG_0005.jpg';
+import Bed105_1 from '../../assets/images/interiorImg/bed105/IMG_0001.JPG';
+import Bed105_2 from '../../assets/images/interiorImg/bed105/IMG_0002.JPG';
+import Bed105_3 from '../../assets/images/interiorImg/bed105/IMG_0003.JPG';
+import Bed105_4 from '../../assets/images/interiorImg/bed105/IMG_0004.JPG';
+import Bed105_5 from '../../assets/images/interiorImg/bed105/IMG_0005.JPG';
 
 import Bed106_1 from '../../assets/images/interiorImg/bed106/IMG_2917.jpg';
 import Bed106_2 from '../../assets/images/interiorImg/bed106/IMG_2919.jpg';
