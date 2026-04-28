@@ -15,6 +15,7 @@ import PM from './pages/services/PM'
 import PrivacyPolicy from './pages/PrivacyPolicy'
 import TermsConditions from './pages/TermsConditions'
 import ScrollToTop from './components/Others/ScrollToTop'
+import NotFound from './pages/NotFound'
 
 const App = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -37,6 +38,8 @@ const App = () => {
 
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/terms-and-conditions" element={<TermsConditions />} />
+
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
     </BrowserRouter>
